@@ -5,10 +5,10 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import logo from '../../src/assets/logos.jpg'
 function NavbarComp() {
   return (
-    <Navbar expand="lg" sticky="top" className="py-3" style={{backgroundColor:'#002889',color:'white'}}>
+    <Navbar expand="lg" sticky="top" className="py-3" style={{backgroundColor:'#333333',color:'black',boxShadow:'0px 4px 8px rgba(0, 0, 0, 0.1)'}}>
       <Container>
     
-         <Navbar.Brand href="#" className="fw-bold text-white">
+         <Navbar.Brand href="#" className="fw-bold text-light">
           <img
             src={logo}
             width='120'

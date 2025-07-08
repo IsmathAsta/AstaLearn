@@ -22,11 +22,15 @@ body {
 /* src/components/HeroSection.css */
 
 .hero-section {
- background-image: url('../src/assets/herobg.jpg');
- background-position: center;
+ background-image: url('../src/assets/ibg.jpg');
+ background-position:center center ;
  background-size: cover;
  background-repeat: no-repeat;
-  min-height: 90vh;
+  /* background-attachment: scroll;          */
+  min-height:65em;                     
+  /* width: 100%;                           */
+  display: flex;
+  align-items: center; 
 }
 
 .ai-button {
