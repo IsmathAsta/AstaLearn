@@ -20,18 +20,29 @@ body {
   font-weight: bold;
 }
 /* src/components/HeroSection.css */
-
 .hero-section {
+ background-image: url('../src/assets/hmbg.png');
+ background-position:bottom center ;
+ background-size: cover;
+ background-repeat: no-repeat;
+  background-attachment: scroll;         
+  min-height:50em;                     
+  width: 100%;                          
+  display: flex;
+  align-items: center; 
+}
+
+/* .hero-section {
  background-image: url('../src/assets/ibg.jpg');
  background-position:center center ;
  background-size: cover;
  background-repeat: no-repeat;
-  /* background-attachment: scroll;          */
+  background-attachment: scroll;         
   min-height:65em;                     
-  /* width: 100%;                           */
+  width: 100%;                          
   display: flex;
   align-items: center; 
-}
+} */
 
 .ai-button {
   background: linear-gradient(to right, #7b61ff, #5e91ff);
@@ -594,7 +605,7 @@ body {
 
 /**********community*************************/
 .stats-bg{
-  background-color: #f8f8f8;
+  background-color: #ffffff;
 }
 .stat-icon {
   width: 50px;
@@ -723,8 +734,18 @@ body {
 
 /*********************FOOTER*****************/
 .footer-wrapper{
-  background-color: #000;
-  color: #646464;
+  background-image: url('/src/assets/footerbg.jpg');
+  background-color: #020b17; 
+  /* background-size:cover; */
+  background-position: center;
+  background-repeat: repeat;
+height: 40vh;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
 }
 .footer-menu{
   display: flex;
@@ -835,5 +856,21 @@ background-image: url('/src/assets/shape.png');
   border-radius: 50%;
   font-weight: 600;
 }
-
+/*****************Appjs***************/
+.app-bg{
+  background-image: url('/src/assets/appbg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+ padding-top: 10% !important;
+  padding-bottom: 15% !important;
+/* background-attachment: fixed; */
+/* height: 70vh; */
+/* display: flex;
+align-items: center; */
+}
+.pricing-section ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
 
