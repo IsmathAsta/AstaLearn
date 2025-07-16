@@ -58,27 +58,3 @@
 // };
 
 // export default ImageGallery;
-
-import React, { useState } from "react";
-import { addCustomer as addCustomerAction } from "../../Slices/Customerslice";
-import { useDispatch } from "react-redux";
-
-export default function ImageGallery(){
-  const [input,setInput] = useState("");
-  const dispatch = useDispatch()
-  // const [cutomer,setCustomer] = useState([])
-
-  function addCustomer() {
-    if(input){
-    // setCustomer((prev)=>[...prev,input])
-    dispatch(addCustomerAction(input))
-    setInput('')
-  }
-}
-  return(
-    <>
-    <input type="text" value={input} onChange={(e)=>setInput(e.target.value)}/>
-    <button onClick={addCustomer}>add</button>
-    </>
-  )
-}
