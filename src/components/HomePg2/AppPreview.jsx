@@ -1,29 +1,65 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Col, Container, Row } from "react-bootstrap";
+import img1 from "../../assets/corp.jpg";
+import img2 from "../../assets/welcomeimg.webp";
+import img3 from "../../assets/welcomeimg.webp";
 
 export default function AppPreview(){
+  const data = [
+      {
+        title: "Real-world skill development",
+        desc: "Role Play is the AI way for learners to practice their communication skills. Role Play’s conversation coaching and real-time feedback is in hundreds of Udemy courses. Plus, create your own Role Plays so employees can practice skills specific to your business.",
+        image: img1,
+      },
+      {
+        title: "AI-powered coaching",
+        desc: "Boost confidence and clarity with interactive, guided AI coaching that mimics real business scenarios. Perfect for onboarding, sales, and leadership training.",
+        image: img2,
+      },
+      {
+        title: "Measurable performance",
+        desc: "Track learning outcomes and behavioral growth with smart analytics and reporting built into every interaction.",
+        image: img3,
+      },
+    ];
     return(
         <>
-         <div className="app-bg py-5">
-        <div className="container">
-          <div className="row align-items-center">
+        <Container className="my-5">
+        {data.map((item, index) => (
+          <Row
+            key={index}
+            className="overflow-hidden mb-5"
+            style={{
+              borderRadius: '20px',
+            }}>
             
-            {/* Left: Text Content */}
-            <div className="col-md-6 mb-4 mb-md-0">
-              <p className="text-uppercase text-muted small">Seamless Workflow</p>
-              <h2 className="fw-bold mb-4">Tired of Manual Work? Watch the Solution.</h2>
-              <p className="text-muted mb-4">
-               Our powerful, user-friendly platform helps your institution stay productive and organized.
-Watch the demo to explore how it simplifies your daily tasks — so you can focus on teaching, not managing.
-              </p>
-              <Button style={{ backgroundColor: '#F24080', borderColor: '#F24080', borderRadius: '50px' }} className="mt-3 b-0 px-3 py-2">Get Started </Button>
-            </div>
+            <Col
+              md={5}
+              className="d-flex align-items-center"
+              style={{
+                backgroundColor: '#f8f9fa',
+                padding: '40px',
+              }}
+            >
+              <div>
+                <h3 className="fw-bold mb-3">{item.title}</h3>
+                <p className="text-muted">{item.desc}</p>
+              </div>
+            </Col>
 
            
+            <Col md={7} className="p-0">
+              <img
+                src={item.image}
+                alt="feature"
+                className="img-fluid h-100 w-100 rounded-4"
 
-          </div>
-        </div>
-      </div>
+              />
+            </Col>
+          </Row>
+        ))}
+      </Container>
+
         </>
     )
 }

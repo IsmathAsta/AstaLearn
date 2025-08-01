@@ -2,10 +2,10 @@
 
 import React from 'react';
 import { Container, Nav, Navbar } from 'react-bootstrap';
-import logo from '../../src/assets/logos.jpg'
+import logo from '../../src/assets/logo.png'
 function NavbarComp() {
   return (
-    <Navbar expand="lg" sticky="top" className="py-3" style={{backgroundColor:'#333333',color:'black',boxShadow:'0px 4px 8px rgba(0, 0, 0, 0.1)'}}>
+    <Navbar expand="lg" sticky="top" className="py-3" style={{backgroundColor:'#f3f3f3',color:'black',boxShadow:'0px 4px 8px rgba(0, 0, 0, 0.1)'}}>
       <Container>
     
          <Navbar.Brand href="#" className="fw-bold text-light">
