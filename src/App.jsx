@@ -12,10 +12,7 @@ function App() {
 
   return (
     <>
-    {/* <Provider store={store}>
-      <ImageGallery/>
-      <Dummy/>
-    </Provider> */}
+   
       <NavbarComp/>
      
       

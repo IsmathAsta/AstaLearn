@@ -43,6 +43,23 @@ export default function PricingPlan() {
               </div>
             </div>
           </div>
+           {/* Free Plan */}
+          <div className="col-md-4 mb-4">
+            <div className="card shadow-sm border-0 h-100">
+              <div className="card-body text-center">
+                <h5 className="card-title fw-bold">Ultimate</h5>
+                <h2 className="my-3">$0<span className="fs-6 text-muted">/month</span></h2>
+                <ul className="list-unstyled mb-4">
+                  <li>✔ Up to 50 students</li>
+                  <li>✔ 1 teacher account</li>
+                  <li>✔ Limited live classes</li>
+                  <li>✔ Basic course publishing</li>
+                  <li>✔ Community support</li>
+                </ul>
+                <button className="btn btn-outline-primary w-100">Upgrade Now</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

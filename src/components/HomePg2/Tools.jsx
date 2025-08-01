@@ -38,23 +38,31 @@ function Features() {
                     <div className="tools-header text-center pb-5">
                         <h1 className="fw-bold mb-4">Our Features At Glance</h1>
                         <div className="zigzag mx-auto"></div>
-</div>
+                    </div>
 
-                        {/* Center: Category Cards */}
+                    {/* Center: Category Cards */}
 
-                        <Row className="g-3">
-                            {categories.map((item, i) => (
-                                <Col md={3} sm={6} xs={6} key={i}>
-                                    <div className="category-card text-center h-100">
-                                        <div className="icon-bg mx-auto mb-2">
-                                            <i className={`fa-solid ${item.icon}`}></i>
-                                        </div>
-                                        <h5 className="fw-bold mb-1 mt-4">{item.title}</h5>
-                                        <p className="text-danger small">{item.semester}</p>
+                    <Row className="g-3">
+                        {categories.map((item, i) => (
+                            <Col md={3} sm={6} xs={6} key={i}>
+                                <div className="category-card text-center h-100">
+                                    <div className="icon-bg mx-auto mb-2">
+                                        <i className={`fa-solid ${item.icon}`}></i>
                                     </div>
-                                </Col>
-                            ))}
-                        </Row>
+                                    <h5 className="fw-bold mb-1 mt-4 fs-sm-6">{item.title}</h5>
+                                    <p className="text-danger small">{item.semester}</p>
+                                </div>
+                            </Col>
+                        ))}
+                    </Row>
+                    <div className="d-flex justify-content-center mt-5">
+                        <Button
+                            style={{ backgroundColor: '#F24080', borderColor: '#F24080', borderRadius: '50px' }}
+                            className="px-4 py-3"
+                        >
+                            Start Learn
+                        </Button>
+                    </div>
 
                 </Container>
             </div>
