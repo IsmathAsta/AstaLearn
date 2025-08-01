@@ -4,7 +4,7 @@ import './App.css'
 import CourseDetail from './components/CourseSection/CourseDetail'
 import Footer from './components/Footer'
 import NavbarComp from './components/NavbarComp'
-import Home from './components/HomePage/Home'
+import Home from './components/HomePg2/Home'
 
 
 function App() {
